@@ -1,0 +1,48 @@
+@media screen and (max-width: 576px) {
+  body {
+    margin: 0;
+  }
+  /* banner */
+  #banner--text h1 {
+    font-size: x-large;
+  }
+  /* nav-bar */
+
+  /* Thông tin cá nhân */
+  #target {
+    border: 0;
+    border-bottom: 2px solid #f7f7f7;
+    text-align: left;
+  }
+  #target .section-content {
+    font-size: medium;
+  }
+  #personal-info {
+    border: 0;
+  }
+  #personal-info .section-content {
+    font-size: medium;
+  }
+  /* Job */
+  #job-info > .container-fluid > div {
+    width: 95%;
+  }
+  #job-info .container-fluid > div h1 {
+    font-size: x-large;
+  }
+
+  /* CERTIFICATE */
+  #cert-2 {
+    border-left: 0;
+    border-bottom: 2px solid #f7f7f7;
+  }
+  /* Project */
+  .project-layout {
+    width: 90%;
+    margin: 20px 0;
+  }
+  /* footer */
+  #footer a {
+    font-size: medium;
+  }
+}

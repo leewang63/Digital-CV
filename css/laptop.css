@@ -1,0 +1,421 @@
+* {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+i {
+  color: #c9703d;
+}
+body {
+  margin: 0 100px;
+  box-shadow: 3px 3px 100px#ddb49c;
+}
+.bg-orange {
+  background: #ddb49c;
+}
+.section-title {
+  color: #c9703d;
+  padding: 10px 0px;
+}
+/* BANNER-CSS */
+#banner {
+  /*  border-radius:; */
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+.banner__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+  transition: 0.75s;
+}
+#banner:hover .banner__img {
+  transform: scale(1.5);
+  opacity: 1;
+}
+#banner--text {
+  color: #f7f7f7;
+  text-shadow: 0px 0px 10px #c9703d;
+  text-transform: uppercase;
+  top: 60%;
+  left: 50%;
+  translate: -50%;
+}
+
+/* NAVBAR-CSS */
+#nav-bar.container-fluid {
+  margin: 10px 0;
+}
+
+#nav-bar a {
+  font-size: large;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #c9703d;
+  padding: 5px 10px;
+}
+
+#nav-bar a:hover {
+  background-color: #c9703d;
+  border-radius: 20px;
+  color: #f7f7f7;
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+#nav-bar img {
+  transform: translate(-50%, -40%);
+}
+
+/* INFO-CSS */
+
+#about.container-fluid {
+  line-height: 30px;
+  font-size: 18px;
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+#about .row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+#target {
+  text-align: right;
+  border-right: 2px solid #f7f7f7;
+}
+
+#personal-info {
+  text-align: left;
+  border-left: 2px solid #f7f7f7;
+}
+#personal-info a {
+  color: #c9703d;
+}
+
+#personal-info a:hover {
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  transition: 0.5s;
+  padding: 5px;
+  color: #c9703d;
+}
+.info-list {
+  display: none;
+}
+.info-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.info-list span {
+  font-weight: bold;
+}
+.info-list li::marker {
+  color: #c9703d;
+}
+.info-list li:last-child {
+  margin-left: -20px;
+  margin-top: 20px;
+  list-style: none;
+}
+.submit-email .btn {
+  color: #c9703d;
+  background-color: #f7f7f7;
+  border-color: #f7f7f7;
+  font-weight: bold;
+}
+.submit-email p {
+  font-size: 14px;
+}
+.submit-email .input-group-text {
+  color: #c9703d;
+}
+
+/* JOB-CSS */
+
+/* CSS chung cho các Container */
+#job-info .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+#job-info > .container-fluid > div {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 50px;
+  row-gap: 20px;
+  border: 2px solid #ddb49c;
+  padding: 20px;
+  box-shadow: 5px 5px #ddb49c;
+  width: 30%;
+}
+#job-info .container-fluid > div h1 {
+  color: #c9703d;
+  font-size: xx-large;
+}
+#job-info .container-fluid > div > i {
+  transform: scale(2.2);
+  position: relative;
+  text-align: center;
+  top: 50%;
+}
+#job-info .container-fluid > div > *:not(h1, i) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#job-info .viewmore {
+  color: #f7f7f7;
+  background-color: #c9703d;
+  border-color: #c9703d;
+  display: none;
+}
+#job-info .section-content {
+  display: none;
+}
+
+/* JOB - KINH NGHIỆM, HỌC VẤN, HOẠT ĐỘNG */
+.job__type--list ul {
+  padding-left: 20px;
+}
+.job__type--list ul li {
+  font-size: medium;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+.job__type--list ul li::marker {
+  color: #c9703d;
+}
+
+.job__type--list ul li p:first-child {
+  font-weight: bold;
+  color: #c9703d;
+}
+.job__type--list ul li p:nth-child(2) {
+  font-style: italic;
+  opacity: 0.8;
+}
+.job__type--list ul li p:nth-child(2) span {
+  background-color: #ddb49c;
+  padding: 2px 10px;
+  border-radius: 10px;
+}
+.job__type--list ul li p:last-child {
+  opacity: 0.8;
+}
+
+/* JOB- SỞ THÍCH */
+
+.job__type--icon div div {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.job__type--icon > div i {
+  width: 50px;
+  height: 50px;
+  transform: scale(1.2);
+  padding: 10px;
+  border: 2px solid #ddb49c;
+  border-radius: 50px;
+}
+
+.job__type--icon > div > div:last-child {
+  opacity: 0.8;
+}
+
+/* JOB - NGÔN NGỮ, KỸ NĂNG */
+.job__type--level span {
+  background-color: #ddb49c;
+  display: inline-block;
+  margin-right: 10px;
+  height: 5px;
+  width: 50px;
+  border-radius: 10px;
+}
+/* Ngôn ngữ */
+#lang-1 span:first-of-type {
+  background-color: #c9703d;
+}
+#lang-2 span:not(span:nth-last-of-type(1)) {
+  background-color: #c9703d;
+}
+/* Kỹ năng */
+
+#skill-1 span:not(span:last-of-type) {
+  background-color: #c9703d;
+}
+#skill-2 span:first-of-type,
+#skill-3 span:first-of-type,
+#skill-4 span:first-of-type {
+  background-color: #c9703d;
+}
+#skill-1 p,
+#skill-2 p,
+#skill-3 p,
+#skill-4 p {
+  opacity: 0.8;
+}
+#lang-1 p,
+#lang-2 p {
+  opacity: 0.8;
+}
+/* CERTIFICATE - CSS */
+#certificate {
+  margin-top: 50px;
+}
+#certificate .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+#certificate .container-fluid > div {
+  display: flex;
+  text-align: left;
+  font-size: medium;
+  padding: 10px;
+}
+#certificate h3 {
+  font-size: x-large;
+  text-transform: uppercase;
+  color: #c9703d;
+}
+#certificate .section-title {
+  text-align: center;
+}
+/* #cert-1,
+#cert-2,
+#cert-3 {
+  display: flex;
+  padding: 20px;
+} */
+#cert-1 img,
+#cert-2 img,
+#cert-3 img {
+  margin: 10px;
+  width: 50%;
+}
+
+#cert-1 div p,
+#cert-2 div p,
+#cert-3 div p {
+  opacity: 0.8;
+}
+#cert-1 {
+  border-bottom: 2px solid #f7f7f7;
+}
+#cert-2 {
+  border-left: 2px solid #f7f7f7;
+  border-bottom: 2px solid #f7f7f7;
+}
+
+/* #certificate .container {
+  grid-template-areas:
+    "tittle tittle"
+    "cert-1 cert-2"
+    "cert-3 cert-3";
+  margin: 20px 50px;
+} */
+
+/* DỰ ÁN */
+
+#project .container-fluid {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 50px;
+}
+#project .section-title {
+  text-align: center;
+}
+
+.project-layout {
+  border: 2px solid #ddb49c;
+  text-align: justify;
+  box-shadow: 5px 5px #ddb49c;
+  width: 30%;
+}
+.project-layout img {
+  width: 100%;
+}
+.project-layout div {
+  border-bottom: 2px solid #ddb49c;
+}
+
+.project-layout div:first-of-type {
+  padding: 20px;
+  border-top: 2px solid #ddb49c;
+  text-transform: uppercase;
+  font-size: medium;
+  font-weight: bold;
+  color: #c9703d;
+}
+
+.project-layout div:nth-child(3) {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.project-layout div p {
+  padding: 0 5px;
+}
+.project-layout div p:first-child {
+  background-color: #c9703d;
+  color: #f7f7f7;
+  border-radius: 10px;
+  padding: 5px;
+}
+.project-layout table {
+  margin-bottom: 10px;
+}
+.project-layout table tr {
+  text-align: justify;
+  vertical-align: top;
+  line-height: 1.5;
+}
+.project-layout table tr:not(tr:last-child) {
+  border-bottom: 2px solid #ddb49c;
+}
+.project-layout table td {
+  padding: 10px 5px;
+}
+.project-layout table td:first-child {
+  width: 25%;
+}
+.project-layout div:nth-child(3),
+.project-layout table {
+  opacity: 0.8;
+}
+[id^="pro-"] > div:last-of-type {
+  display: flex;
+  justify-content: center;
+  border: 0;
+  margin: 5px 0;
+}
+[id^="pro-"] a {
+  color: #f7f7f7;
+  background-color: #c9703d;
+  padding: 5px;
+  border-radius: 10px;
+}
+/* Liên hệ */
+#footer .container-fluid {
+  padding: 20px 0;
+}
+/* #footer nav {
+} */
+#footer a {
+  background-color: #ffffff;
+  color: #c9703d;
+  border-radius: 20px;
+  font-size: large;
+  padding: 5px 10px;
+}

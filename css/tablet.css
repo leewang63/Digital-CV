@@ -1,0 +1,71 @@
+@media screen and (max-width: 992px) {
+  body {
+    margin: 0 50px;
+  }
+  .section-title {
+    font-size: x-large;
+  }
+  h3 {
+    font-size: large;
+  }
+  /* nav-bar */
+  #nav-bar nav a {
+    font-size: medium;
+  }
+  .avatar {
+    display: none;
+  }
+
+  /* Thông tin cá nhân */
+  #about.container-fluid {
+    padding-top: 10px;
+  }
+  #about .section-title {
+    font-size: x-large;
+  }
+  #about .section-content {
+    font-size: small;
+  }
+  #about .input-group-text {
+    font-size: 0.8rem;
+  }
+  #about .btn-sm {
+    font-size: 0.8rem;
+  }
+
+  /* Job */
+
+  #job-info > .container-fluid > div {
+    width: 45%;
+  }
+  #job-info .container-fluid > div h1 {
+    color: #c9703d;
+    font-size: x-large;
+  }
+  #job-info .container-fluid > div > i {
+    transform: scale(1.5);
+    top: 25%;
+  }
+  #job-info .viewmore {
+    display: block;
+  }
+  /* CERTIFICATE */
+  #certificate .container-fluid > div {
+    flex-wrap: wrap;
+  }
+  #cert-1 img,
+  #cert-2 img,
+  #cert-3 img {
+    width: 90%;
+  }
+  #certificate h3 {
+    font-size: medium;
+  }
+
+  /* Project */
+
+  /* footer */
+  #footer a {
+    font-size: medium;
+  }
+}
