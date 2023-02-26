@@ -4,7 +4,10 @@
   }
   /* banner */
   #banner--text h1 {
-    font-size: large;
+    font-size: x-large;
+  }
+  #banner--text span {
+    font-size: medium;
   }
   /* nav-bar */
 
